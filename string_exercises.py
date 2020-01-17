@@ -26,7 +26,7 @@
 # l33t_language = ["4", "8", "<", "|)", "3", "!=", "[,", "4", "1", "_|", "|<", "|_", "44", "|\|", "0", "|o", "O_", "|2", "5", "7", "|_|", "\/", "\/\/", "%", "`/", "2"]
 # ABC = ["A","B","C", "D", "E", "F", "G" "H", "I", "J", "K", "L", "M", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 
-# WORKING LEET TRANSLATOR --
+# WORKING LEET TRANSLATOR USING DICTONARY --
 # dict = {"A" : '4', "B" : '8', "C" : '<', "D" : '|)', "E" : '3', "F" : '!=', "G" : '[,', "H" : '4', "I" : '1', "J" : '_|', "K" : '|<', "L" : '|_', "M" : '44', "N" : '|\|', "O" : '0', "P" : '|o', "Q" : '0_', "R" : '|2', "S" : '5', "T" : '7', "U" : '|_|', "V" : '\/', "W" : '\/\/', "X" : '%', "Y" : '`/', "Z" : '2'}
 
 # speak_leet = str(input("What sentence would you like to convert to 1337 language? ").upper())
@@ -40,6 +40,7 @@
 
 # --- Was going to try to figure out how to do this 
 # Exercise with a list.
+
 # vowels = ["A", "E", "I", "O", "U", "Y"]
 
 # long_vowel = str(input("Let's exaaaggeeeerateeee some vowels"))
@@ -53,15 +54,32 @@
 
 #----- 
 
-vowels="aeiou"
-user = input("Enter: ")
-new_string = ''
+# Simpler working way 
 
-for i in range(len(user)):
-    if user[i] == user[i - 1] and user[i] in vowels:
-        new_string += user[i] * 4
-    else:
-        new_string += user[i]
-print(new_string)
+# vowels="aeiou"
+# user = input("Enter: ")
+# new_string = ''
+
+# for i in range(len(user)):
+#     if user[i] == user[i - 1] and user[i] in vowels:
+#         new_string += user[i] * 4
+#     else:
+#         new_string += user[i]
+# print(new_string)
+
+#------
+
+# Look at the documentation to understand more on maketrans, and translate *
+
+# abc = "abcdefghijklmnopqrstuvwxyz"
+# caesar_cipher="bcdefghijklmnopqrstuvwxyza"
+# user = input("Enter what you want ciphered: ")
+# new_string = ''
+
+# new_string = user.translate(str.maketrans(abc, caesar_cipher))
+
+
+# print(new_string)
+
 
 
