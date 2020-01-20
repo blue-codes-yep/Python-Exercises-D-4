@@ -2,5 +2,5 @@
 
 ## All of the String Exercises from day 3 with Python. 
 
-* Python String Exercises
+* Python String and List Exercises
 * Project status: Practice 
